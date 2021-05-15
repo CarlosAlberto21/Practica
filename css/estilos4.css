@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Original Surfer', cursive;
+	background-color: #B7B7B7;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container{
+	width: 90%;
+	background: #fff;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.container-header {
+	background: url(../img/1565170760_762294_1565170960_noticia_normal.jpg) no-repeat center;	
+	height: 120px;
+	margin-bottom: 10px;
+}
+
+/* Navegador */
+.nav-main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 5px;
+}
+
+.nav-main ul {
+	display: flex;
+	
+}
+
+.nav-main ul li{
+	padding: 10px;
+	list-style: none;
+}
+
+a{
+	color: #000	;
+	text-decoration: none;
+}
+
+.nav-main ul li a:hover{
+	border-bottom: 2px solid #fff; 
+}
+
+/* Cuerpo */
+
+.contain-main{
+	display: grid;
+	color: #ffff;
+	padding: 5px;
+	justify-content: center;
+	grid-template-columns: repeat(6, 150px) ;
+	grid-auto-rows: 150px;
+	grid-gap: 10px;
+	
+}
+
+
+
+.article{
+	grid-column: 1/4;
+	background: #497B7B;
+	height: 450px;
+	padding: 5px;
+	border-radius: 5px;
+	grid-row: 1/4;
+
+}
+
+.sidebar{
+	grid-column: 4/7;
+	background:  #497B7B;
+	height: 450px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.img1{
+	width: 300px;
+	height: 200px;
+	background: url(../img/índice2.jpeg);
+	grid-column: 1/3;
+	grid-row: 4/6
+
+}
+
+.img2{
+	width: 300px;
+	height: 200px;
+	background: url(../img/Mejores-peleas-de-naruto-300x200.png);
+	grid-column: 3/5;
+	grid-row: 4/6
+
+}
+
+.img3{
+	width: 300px;
+	height: 200px;
+	background: url(../img/e01b409f07ba9f10dbff4b4362f210f4.jpg);
+	grid-column: 5/-1;
+	grid-row: 4/6;
+
+}	
